@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pautas de la Comunidad - Estelar Latam</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/estelarlatam/website/refs/heads/main/resources/logo-oficial-de-estelar-latam.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/estelarlatam/website/refs/heads/main/resources/logo-oficial-de-estelar-latam.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(90deg, #00c6ff 0%, #0072ff 25%, #7b2cbf 75%, #ff006e 100%);
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a68;
+            --bg-body: #ffffff;
+            --bg-section: #f8f9fa;
+            --border-color: #e0e0e0;
+            --link-color: #0072ff;
+            --warning-color: #dc3545;
+            --success-color: #28a745;
+            --spain-red: #aa151b;
+            --spain-yellow: #f1bf00;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .community-header {
+            background: var(--primary-gradient);
+            padding: 60px 20px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .community-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .header-logo-container {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+
+        .header-logo {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        .page-title {
+            font-size: 2.8rem;
+            color: white;
+            font-weight: 600;
+            position: relative;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Contenido */
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: white;
+        }
+
+        /* Secciones */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary-gradient);
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            text-align: justify;
+        }
+
+        .highlight-paragraph {
+            font-size: 1.15rem;
+            line-height: 2;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--link-color);
+            margin: 30px 0;
+            font-weight: 500;
+        }
+
+        /* Listas */
+        .guidelines-list {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+        }
+
+        .guidelines-list li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .guidelines-list.positive li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .guidelines-list.negative li::before {
+            content: '✕';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--warning-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Sección crítica */
+        .critical-section {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+            border-radius: 12px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .critical-title {
+            color: var(--warning-color);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .critical-content {
+            color: var(--text-primary);
+            line-height: 1.9;
+        }
+
+        .critical-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .critical-list li {
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .critical-term {
+            font-weight: 700;
+            color: var(--warning-color);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .alert-box {
+            background: var(--warning-color);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Reporte */
+        .report-section {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 12px;
+            padding: 28px;
+            margin: 40px 0;
+        }
+
+        .report-title {
+            color: #234e52;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .report-content {
+            color: #2c7a7b;
+            line-height: 1.8;
+        }
+
+        .report-button {
+            display: inline-block;
+            background: var(--warning-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .report-button:hover {
+            background: #c82333;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+        }
+
+        /* Footer */
+        .community-footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .spain-badge-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, var(--spain-red) 0%, var(--spain-yellow) 50%, var(--spain-red) 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-container {
+                padding: 40px 24px;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .critical-section,
+            .report-section {
+                padding: 24px;
+            }
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link-color);
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="community-header">
+        <div class="header-logo-container">
+            <img src="https://raw.githubusercontent.com/estelarlatam/website/refs/heads/main/resources/logo-oficial-de-estelar-latam.png" alt="Estelar Latam Logo" class="header-logo">
+            <h1 class="page-title">Pautas de la Comunidad</h1>
+            <p class="subtitle">Normas para un espacio seguro y creativo <span class="spain-badge-inline">🇪🇸 UE</span></p>
+        </div>
+    </header>
+
+    <main class="content-container">
+
+        <!-- SECCIÓN: NUESTRA VISIÓN -->
+        <section class="section">
+            <h2 class="section-title">Nuestra Visión</h2>
+            
+            <p class="intro-text">
+                Estelar Latam nació del deseo de liberar la creatividad humana más allá de las limitaciones físicas, permitiendo a creadores de toda Iberoamérica y Europa expresarse a través de identidades virtuales sin barreras. Creemos profundamente en el poder de los avatares para construir puentes culturales entre España, Latinoamérica y el mundo.
+            </p>
+
+            <p class="intro-text">
+                A través de tu avatar, puedes explorar facetas de tu personalidad, contar historias únicas y construir comunidades globales desde nuestra base en Pamplona, España. Queremos que Estelar Latam sea un universo donde la tecnología serve a la autenticidad humana, no al revés.
+            </p>
+
+            <div class="highlight-paragraph">
+                En Estelar Latam, aspiramos a construir la comunidad VTuber más inclusiva y segura de habla hispana. Sabemos que internet puede ser un espacio hostil, pero estamos comprometidos a crear un entorno donde la diversidad cultural (iberomamericana, europea, LGTBIQ+, neurodivergente) sea celebrada y protegida. No toleraremos comportamientos que hagan sentir inseguros a nuestros creadores, independientemente de la "intención" detrás del acto.
+            </div>
+
+            <p class="intro-text">
+                Por eso, hemos establecido estas pautas claras. Si detectas conductas que violen nuestras normas, utiliza el sistema de reporte inmediatamente. Tras investigación, tomaremos medidas que van desde advertencias hasta la prohibición permanente y denuncias ante autoridades españolas.
+            </p>
+        </section>
+
+        <!-- SECCIÓN: LO QUE FOMENTAMOS -->
+        <section class="section">
+            <h2 class="section-title">Lo que celebramos en nuestra comunidad</h2>
+            
+            <p class="intro-text">
+                Queremos que tu experiencia en Estelar Latam sea enriquecedora. Por eso, recomendamos activamente:
+            </p>
+
+            <ul class="guidelines-list positive">
+                <li>
+                    <strong>Comparte tu autenticidad:</strong> Habla sobre tus pasiones, tu cultura hispana, tu día a día o tus emociones. Ya sea desde Barcelona, Ciudad de México o Buenos Aires, tu voz tiene valor aquí.
+                </li>
+                
+                <li>
+                    <strong>Cultiva amistades genuinas:</strong> Conecta con otros creadores VTubers, colabora en proyectos transnacionales y construye redes de apoyo entre Europa e Iberoamérica.
+                </li>
+
+                <li>
+                    <strong>Integra Estelar Latam en tu vida creativa:</strong> Trata esta plataforma como tu espacio artístico profesional, con la misma dedicación que pondrías a tu música, arte o escritura.
+                </li>
+
+                <li>
+                    <strong>Practica la escucha activa:</strong> Aborda interacciones con perspectivas diferentes buscando comprender antes que juzgar. Respetamos el español castellano, latinoamericano, catalán, euskera y otras lenguas de nuestros usuarios.
+                </li>
+
+                <li>
+                    <strong>Crea contenido original:</strong> Explora narrativas, personajes y mundos virtuales que reflejen la riqueza cultural compartida entre España y Latinoamérica.
+                </li>
+
+                <li>
+                    <strong>Apoya el crecimiento mutuo:</strong> Celebra los éxitos de otros creadores, comparte conocimientos técnicos sobre animación 3D/VRM, y fomenta un ambiente de mejora continua.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: LO QUE PROHIBIMOS -->
+        <section class="section">
+            <h2 class="section-title">Conductas absolutamente prohibidas</h2>
+            
+            <p class="intro-text">
+                Para mantener la integridad de nuestra comunidad iberoamericana-europea, estos comportamientos resultarán en acciones inmediatas de moderación:
+            </p>
+
+            <ul class="guidelines-list negative">
+                <li>
+                    <strong>Acceso por menores no autorizados:</strong> Uso de Estelar Latam por personas menores de 13 años, o menores de 16 sin consentimiento parental verificado conforme al RGPD europeo.
+                </li>
+
+                <li>
+                    <strong>Discriminación sistemática:</strong> Hostigamiento basado en origen étnico, nacionalidad (incluyendo xenofobia contra españoles, latinos o cualquier grupo), raza, sexo, género, orientación sexual, religión, edad, discapacidad o condición socioeconómica.
+                </li>
+
+                <li>
+                    <strong>Acoso y violencia:</strong> Insultos persistentes, amenazas, doxing (publicación de datos personales como direcciones en Pamplona o España), grooming, "troleo" malicioso, o cualquier forma de intimidación contra creadores o espectadores.
+                </li>
+
+                <li>
+                    <strong>Uso sexualizado de la plataforma:</strong> Emplear Estelar Latam para buscar parejas sexuales, solicitar encuentros físicos, o distribuir contenido erótico no consensuado entre usuarios.
+                </li>
+
+                <li>
+                    <strong>Contenido sexual explícito:</strong> Transmisión de pornografía, actos sexuales explícitos, o uso de avatares para simular actividad sexual (rule 34), independientemente de si los avatares son "ficticios".
+                </li>
+
+                <li>
+                    <strong>Promoción de daño personal:</strong> Difusión de material que glorifique autolesiones, suicidio, trastornos alimentarios, o consumo de sustancias como método de "coping" sin contexto de recuperación.
+                </li>
+
+                <li>
+                    <strong>Suplantación de identidad:</strong> Fingir ser otro creador de Estelar Latam (falsificación de marca personal), miembro del equipo de moderación español, o representante de la empresa radicada en Pamplona.
+                </li>
+
+                <li>
+                    <strong>Exposición de datos:</strong> Revelar información privada identificable (PII) propia o de terceros, incluyendo nombres legales, direcciones físicas en territorio español o latinoamericano, documentos de identidad, o información bancaria.
+                </li>
+
+                <li>
+                    <strong>Spam y manipulación:</strong> Uso de bots, compra de seguidores falsos, esquemas "follow-for-follow" coordinados, o manipulación de rankings de regalos mediante cuentas alternas (multi-accounts).
+                </li>
+
+                <li>
+                    <strong>Contenido ilegal grave:</strong> Cualquier material relacionado con terrorismo, tráfico de drogas, violencia extrema (gore), o crímenes de odio conforme al Código Penal español.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN CRÍTICA: MENORES -->
+        <div class="critical-section">
+            <h3 class="critical-title">
+                <span>🛡️</span> Protección de Menores - Política Cero Tolerancia
+            </h3>
+            
+            <div class="critical-content">
+                <p style="margin-bottom: 20px;">
+                    <strong>Material de Abuso Sexual Infantil (MASI)</strong> y cualquier forma de explotación sexual de menores (ESI) constituyen violaciones graves que resultarán en la suspensión inmediata y permanente de la cuenta, así como denuncia obligatoria ante las autoridades españolas sin previo aviso.
+                </p>
+
+                <p style="margin-bottom: 20px;">
+                    Queda <strong>estrictamente prohibido</strong> crear, compartir, solicitar o facilitar:
+                </p>
+
+                <ul class="critical-list">
+                    <li>
+                        <span class="critical-term">Material de Abuso Sexual Infantil (MASI):</span>
+                        Incluye imágenes, videos, audio o representaciones digitales (incluyendo avatares "lolis"/"shotas" hipersexualizados, CG, modelos 3D o deepfakes) que representen o insinúen actividad sexual de menores de 18 años, incluso si son personajes ficticios o anime. Esto incluye contenido "sugerente" donde menores aparezcan en contextos sexualizados.
+                    </li>
+
+                    <li>
+                        <span class="critical-term">Acoso o grooming de menores:</span>
+                        Intentos de generar confianza con menores para fines sexuales, solicitudes de información personal a usuarios identificados como menores (ciudad en España, escuela, número de teléfono), o invitaciones a chats privados con contenido sexual.
+                    </li>
+
+                    <li>
+                        <span class="critical-term">Sexualización de menores:</span>
+                        Comentarios de naturaleza sexual dirigidos a usuarios menores de edad, incitación a que menores participen en conductas sexualizadas, o creación de avatares que representen menores en situaciones comprometedoras.
+                    </li>
+
+                    <li>
+                        <span class="critical-term">Trata y explotación:</span>
+                        Solicitación de prostitución infantil, tráfico de menores para fines de explotación sexual comercial, o facilitación de encuentros entre adultos y menores.
+                    </li>
+                </ul>
+
+                <div class="alert-box">
+                    ⚠️ ESTELAR LATAM COOPERA PLENAMENTE CON LAS AUTORIDADES ESPAÑOLAS
+                </div>
+
+                <p style="margin-top: 20px;">
+                    Al detectar cualquier infracción relacionada con menores:
+                </p>
+                
+                <ul style="margin: 16px 0; padding-left: 20px; color: var(--text-secondary);">
+                    <li>La cuenta será suspendida permanentemente de inmediato</li>
+                    <li>Toda la información disponible (direcciones IP, logs de chat, metadatos) se preservará como prueba digital</li>
+                    <li>Se notificará a la <strong>Policía Nacional española</strong> (Unidad Central de Ciberdelincuencia)</li>
+                    <li>Se reportará al <strong>Centro Nacional de Desaparecidos y Explotación Sexual de Menores (CDN)</strong> dependiente de la Guardia Civil</li>
+                    <li>En casos de menores latinoamericanos, se coordinará con INTEROL e instituciones correspondientes (Fiscalías especializadas de cada país)</li>
+                    <li>Se cumplirá con el <strong>artículo 183 y siguientes del Código Penal español</strong> (delitos contra la libertad e indemnidad sexual)</li>
+                </ul>
+
+                <p style="margin-top: 20px; font-size: 0.95rem; color: #666;">
+                    <em>Estelar Latam, como empresa española con sede en Pamplona, cumple con la Ley Orgánica 1/2015 de Protección de la Infancia y la Adolescencia frente a la Violencia, y el Reglamento (UE) 2021/1232 de lucha contra el abuso sexual de menores.</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: CÓMO REPORTAR -->
+        <div class="report-section">
+            <h3 class="report-title">¿Cómo reportar violaciones?</h3>
+            
+            <div class="report-content">
+                <p style="margin-bottom: 16px;">
+                    Si encuentras contenido o comportamientos que violen estas pautas:
+                </p>
+
+                <ol style="margin: 16px 0; padding-left: 24px; color: #2c7a7b;">
+                    <li style="margin-bottom: 12px;">
+                        <strong>Denuncia inmediata:</strong> Usa el botón "Reportar" (🚩) disponible en cada perfil, chat o transmisión. Selecciona la categoría que mejor describa la violación.
+                    </li>
+                    
+                    <li style="margin-bottom: 12px;">
+                        <strong>Bloqueo preventivo:</strong> Bloquea al usuario para evitar interacciones futuras mientras nuestro equipo de moderación (basado en España) investiga.
+                    </li>
+
+                    <li style="margin-bottom: 12px;">
+                        <strong>Evidencia:</strong> Si es posible, captura pantallas de las interacciones (conservando marcas de tiempo) para agilizar la investigación.
+                    </li>
+
+                    <li>
+                        <strong>Contacto directo:</strong> Para casos urgentes o graves (amenazas de violencia, MA SI), escribe inmediatamente a: <a href="mailto:estelarlatam.oficial@gmail.com" style="color: #2c7a7b; font-weight: 600;">estelarlatam.oficial@gmail.com</a> con asunto "REPORTE URGENTE - [Tipo de violación]".
+                    </li>
+                </ol>
+
+                <p style="margin-top: 16px; font-size: 0.9rem;">
+                    <strong>Nota:</strong> Las falsas denuncias sistemáticas para dañar reputaciones de creadores también constituyen violación de estas pautas y serán sancionadas.
+                </p>
+
+                <a href="mailto:estelarlatam.oficial@gmail.com?subject=REPORTE%20URGENTE%20-%20Violación%20de%20Pautas" class="report-button">
+                    Reportar Violación Grave
+                </a>
+            </div>
+        </div>
+
+        <!-- SECCIÓN FINAL -->
+        <section class="section">
+            <h2 class="section-title">Compromiso con la transparencia</h2>
+            
+            <p class="intro-text">
+                Estas pautas no son exhaustivas. Estelar Latam se reserva el derecho de determinar qué conductas violan el espíritu de nuestra comunidad, incluso si no están explícitamente listadas aquí. Las decisiones de moderación se toman desde nuestra sede en Pamplona, España, considerando tanto las leyes españolas y europeas como las normas culturales de respeto propias de la comunidad hispanohablante.
+            </p>
+
+            <p class="intro-text">
+                Para mantener Estelar Latam como un espacio donde creadores de España, Latinoamérica y el mundo puedan desarrollar su talento VTuber de forma segura, te pedimos que leas también nuestros <a href="https://estelarlatam.com/legal/terms">Términos de Servicio</a> completos.
+            </p>
+        </section>
+
+        <footer class="community-footer">
+            <div class="footer-links">
+                <a href="https://estelarlatam.com/legal/terms">Términos de Servicio</a>
+                <a href="https://estelarlatam.com/legal/privacy">Política de Privacidad (RGPD)</a>
+                <a href="mailto:estelarlatam.oficial@gmail.com">Contacto Legal</a>
+            </div>
+            
+            <p style="margin-bottom: 8px;">
+                <span class="spain-badge-inline">🇪🇸</span> Estelar Latam - Sociedad española con sede en Pamplona, Navarra
+            </p>
+            
+            <p style="font-size: 0.85rem; color: #999; margin-bottom: 4px;">
+                Creado: 31/01/2026
+            </p>
+            <p style="font-size: 0.85rem; color: #999;">
+                Última actualización: 31/01/2026 (Vigencia inmediata)
+            </p>
+            
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #aaa;">
+                © 2026 Estelar Latam. Todas las pautas están sujetas a la legislación española y europea vigente.<br>
+                Contacto: estelarlatam.oficial@gmail.com | Sede: Pamplona, España
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
